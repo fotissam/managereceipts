@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App-header {
+  padding: 20px;
+}
+
+/* Receipt List */
+.receipt-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .receipt-list-item {
+    background-color: #e5e5e5;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+
+  .active {
+    background-color: #f9e6ba;
+  }
+}
+
+//Add Receipt Form
+.add-receipt {
+  margin: 12px 0;
+  padding: 40px;
+  background-color: #fff2d3;
+  border-radius: 8px;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    gap: 12px;
+    margin: 10px 0;
+
+    input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid red;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+//Edit Receipt Form
+.edit-receipt {
+  padding: 40px;
+  background-color: #fff2d3;
+  border-radius: 8px;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    gap: 12px;
+    margin: 10px 0;
+
+    input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid red;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+//BUtton
+.btn-delete-wrapper {
+  button {
+    background-color: #febdbd;
+
+    &:hover {
+      background-color: #f9c5c5;
+    }
+  }
+}
+
+//Show sum
+.show-sum {
+  padding: 20px;
+  background-color: #add8e6;
+  border-radius: 8px;
+}
+
+.sort-receipts {
+  font-size: 0.875rem;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  background-color: #add8e6;
+  select {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+}
